@@ -1,0 +1,29 @@
+
+
+<!-- partial:index.partial.html -->
+<section class='login' id='login'>
+    <div class='head'>
+    <h1 class='company'>Universe Explorer</h1>
+    </div>
+    <p class='msg'>Welcome back</p>
+    <div class='form'>
+      <form [formGroup]="formularioLog" (ngSubmit)="Login()">
+        <input type="text" placeholder="ID"  formControlName="id" class='text' id='username' required><br>
+        <input type="password" formControlName="pass" placeholder='password' class='password'><br>
+        <!-- <a href="#" class='btn-login' id='do-login' [disabled]="formularioLog.invalid">Login</a> -->
+        <div class="sep">
+          <button class='btn-login' type="submit"id='do-login'  >
+            Login
+        </button>
+        <a href="#" class='btn-login' id='do-login' routerLink="/auth/register">Register</a>
+        </div>
+      </form>
+    </div>
+  </section>
+  <footer>
+    
+    
+  </footer>
+  
+  
+  
